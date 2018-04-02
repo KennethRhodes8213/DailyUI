@@ -6,17 +6,24 @@
 	background-color: #2d2d2d;
 	font-family: Georgia;
 	
+	padding: 0 7em;
+	
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
 }
 
+#signUp h3{
+	font-size: 2em;
+	color: #fff;
+}
+
 #signUp .wrapper{
-	width: 50%;
-	height: 50%;
 	background-color: #1c1c1c;
 	border: 1px solid #fff;
+	
+	padding: 3em 0;
 	
 	display: flex;
 	align-items: center;
@@ -58,9 +65,26 @@
 	color: #fff;
 	cursor: pointer;
 	outline: 0;
+	transition: 0.3s;
+}
+
+#signUp .wrapper input[type="Submit"]:hover{
+	border-color: rgba(0, 0, 0, 0.0);
+	background-color: #fff;
+	color: #000;
 }
 
 /* Make this happen with jQuery onChange() when the form is completed. */
 /*#signUp .wrapper input[type="Submit"]:valid{
 	background-color: lightgreen;
 }*/
+
+#signUp .wrapper .form-control{display: initial;}
+
+#signUp .wrapper .form-control:focus{box-shadow: none;}
+
+@media screen and (max-width: 450px){
+	#signUp{
+		padding: 3em 0;
+	}
+}
